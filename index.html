@@ -24,7 +24,7 @@ header {
 }
 
 header img {
-  max-width: 360px; /* slightly bigger logo */
+  max-width: 360px;
 }
 
 /* Hero Section */
@@ -60,6 +60,7 @@ header img {
 
 /* Big Bubble Button */
 .submit-button {
+  display: inline-block;
   width: 100%;
   padding: 18px;
   border-radius: 32px;
@@ -71,6 +72,7 @@ header img {
   box-shadow: 0 6px 14px rgba(75,183,216,0.3);
   transition: 0.2s;
   margin-top: 20px;
+  text-decoration: none;
 }
 
 .submit-button:hover {
@@ -111,9 +113,13 @@ header img {
   <h3>Submit Your Pet Photo</h3>
   <p>Click the button below to safely upload your pet’s photo. All submissions go to our private folder!</p>
   
-  <!-- Replace FORM_ID with your Google Form ID -->
-  <a href="https://docs.google.com/forms/d/e/FORM_ID/viewform" target="_blank">
-    <button class="submit-button">Upload Your Pet Photo 💙</button>
+  <!-- FIXED BUTTON (this is the important part) -->
+  <a 
+    href="https://docs.google.com/forms/d/1wq3PI89huLzBx9Zo4fVWapa8aq4_W2vZkjGlHtNuv9I/viewform" 
+    target="_blank" 
+    class="submit-button"
+  >
+    Upload Your Pet Photo 💙
   </a>
 
   <div class="trust">
