@@ -57,10 +57,17 @@ header img {
   text-align: center;
 }
 
-/* PERFECTLY CENTERED BUTTON */
+/* BUTTON WRAPPER (forces center) */
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* PERFECT BUTTON */
 .submit-button {
   display: inline-block;
-  padding: 18px 40px;
+  padding: 18px 50px;
   border-radius: 32px;
   background: linear-gradient(135deg, #4bb7d8, #6fd3f5);
   color: white;
@@ -68,7 +75,8 @@ header img {
   text-decoration: none;
   box-shadow: 0 6px 14px rgba(75,183,216,0.3);
   transition: 0.2s;
-  margin-top: 20px;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .submit-button:hover {
@@ -108,14 +116,16 @@ header img {
   <h3>Submit Your Pet Photo</h3>
   <p>Click the button below to safely upload your pet’s photo. All submissions go to our private folder!</p>
   
-  <!-- CENTERED WORKING BUTTON -->
-  <a 
-    href="https://docs.google.com/forms/d/e/1FAIpQLSfjKFrF849A3QNQ-lnEiDKURBKU7fdMEmyVBQAp9ntZEk-IQg/viewform" 
-    target="_blank" 
-    class="submit-button"
-  >
-    Upload Your Pet Photo 💙
-  </a>
+  <!-- PERFECTLY CENTERED BUTTON -->
+  <div class="button-wrapper">
+    <a 
+      href="https://docs.google.com/forms/d/e/1FAIpQLSfjKFrF849A3QNQ-lnEiDKURBKU7fdMEmyVBQAp9ntZEk-IQg/viewform" 
+      target="_blank" 
+      class="submit-button"
+    >
+      Upload Your Pet Photo 💙
+    </a>
+  </div>
 
   <div class="trust">
     💙 Trusted Veterinary Care in Southern California
